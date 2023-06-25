@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥S♥ HOTEL'S ->Booking</title>
+    <link rel="icon" href="../Assets/Logo/favicon.ico">
+    <link rel="stylesheet" href="../CSS/bookingPage.css">
+    <link rel="stylesheet" href="../CSS/Gallery.css">
+    <script src="../JS/images.js" defer></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../JS/bookingPage.js" defer></script>
+</head>
+<body onload="bookingCost(),image()">
+    <div id="header">
+        <h1 id="headerHeading"><span id="symbol">♥</span> WELCOME TO <span id="s">S</span> HOTELS <span id="symbol">♥</span></h1>
+        <div id="headicon">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" id="logo"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="logoi"></i></a>
+            <a href="https://www.snapchat.com"><i class="fa-brands fa-snapchat" id="logos"></i></a>
+       </div>
+    </div>
+    <nav id="navBar">
+        <un id="list">
+            <li id="navList"><a href="../index.html" id="list">HOME</a></li>
+            <li id="navList"><a href="./bookingRegistration.html" id="list">BOOKING</a></li>
+            <li id="navList"><a href="./Prices.html" id="list">PRICES</a></li>
+            <li id="navList"><a href="./HTML/Gallery.html" id="list">GALLERY</a></li>
+            <li id="navList"><a href="./About.html" id="list">ABOUT</a></li>
+        </un>
+    </nav>
+    <div id="body">
+        <table id="bookingTotalCost">
+            <tr>
+                <td colspan="3"><h1 style="text-align: center;" id="bookingCostHeading">Booking Total Cost</h1></td>
+            </tr>
+            <tr>
+                <td id="column1" class="tableBookingCostPadding"><b>Total Room Cost</b></td>
+                <td id="column2" class="tableBookingCostPadding">:</td>
+                <td id="column3" class="tableBookingCostPadding"><span id="roomCost"> </span> /-</td>
+            </tr>
+            <tr>
+                <td id="column1" class="tableBookingCostPadding"><b>Total Amenities Cost</b></td>
+                <td id="column2" class="tableBookingCostPadding">:</td>
+                <td id="column3" class="tableBookingCostPadding"><span id="amenitiesCost"> </span> /-</td>
+            </tr>
+            <tr>
+                <td id="column1" class="tableBookingCostPadding"><b>Extra persons Cost</b></td>
+                <td id="column2" class="tableBookingCostPadding">:</td>
+                <td id="column3" class="tableBookingCostPadding"><span id="extraPersonCost"> </span> /-</td>
+            </tr>
+            <tr>
+                <td colspan="3"><hr></td>
+            </tr>
+            <tr>
+                <td id="column1" class="tableBookingCostPadding"><b>Total Cost</b></td>
+                <td id="column2" class="tableBookingCostPadding">:</td>
+                <td id="column3" class="tableBookingCostPadding"><span id="totalCost"> </span> /-</td>
+            </tr>
+        <form>
+            <tr>
+                <td colspan="2" id="continueButtonCol">
+                    <a href="./ConfirmBooking.html"><input type="button" class="button" value="Continue Booking" id="continueButton"></a>
+                </td>
+                <td>
+                    <a href="../index.html"><input type="button" value="Cancle Booking"   class="button" onclick="" id="cancleButton"></a>
+                </td>
+            </tr>
+        </form>
+        <tr>
+            <td></td>
+            <td></td>
+            <td id="updateDetails">
+                <a id="displaybookingPageBody" href="./bookingRegistration.html" class="button">Change Booking Details</a>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <footer id="footer">
+        <div>
+            <i class="fa-solid fa-copyright"></i><span> Copy Rights</span>
+             <h3 id="footerH">S Hotels</h3>
+        </div>
+        <div >
+            <span id="contact">Contact</span><br>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" id="logof"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="logof"></i></a>
+            <a href="https://www.snapchat.com"><i class="fa-brands fa-snapchat" id="logof"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

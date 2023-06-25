@@ -1,0 +1,330 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+#body,#bodyg
+{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color:  rgba(221, 164, 173, 0.642);
+}
+#bookingPageBody
+{
+    width: 60%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 100px;
+    opacity: 0.9;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 3px 3px 5px black,-3px -3px 5px white;
+}
+#itemHeadingBooking,#bookingCostHeading,#confirmBookingHeading
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: pink;
+    text-decoration: underline dotted white  1mm ;
+    text-shadow: 2px 2px 3px black;
+}
+#legend
+{
+    font-size: 22px;
+    color: rgb(65, 143, 174);
+    text-shadow: 1px 1px 1px black;
+}
+#amenities
+{
+    font-size: 22px;
+    color: white;
+}
+#itemRegisterButton
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    font-weight: bold;
+    font-size: 24px;
+    border-width: 0px;
+    border-bottom-width:  10px  ;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    background-color: rgb(38, 92, 74);
+}
+#itemNote
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 18px;
+    color: whitesmoke;
+}
+fieldset
+{
+   text-align: center;
+   border-color: black;
+}
+.inputFieldSet
+{
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+#chechinDate
+{
+    color: white;
+}
+#bookingTotalCost
+{
+    width: 60%;
+    height: auto;
+    position: absolute; 
+    z-index: 1;
+    left: 20%;
+    top: 10%;
+    opacity: 0.8;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px black,-3px -3px 5px black;
+    font-size: 30px;
+    padding: 50px;
+    background-color: black;
+}
+tr
+{
+    width: 100%;
+    color: white;
+}
+#column1
+{
+    width: 35%;
+    padding: 10px;
+}
+#column2
+{
+    width: 5%;
+    text-align: right;
+    padding: 10px;
+}
+#column3
+{
+    width: 60%;
+    padding: 10px;
+}
+#bookingCostHeading
+{
+    padding-bottom: 50px;
+}
+#updateDetails
+{
+    text-align: right;
+    font-size: 22px;
+    
+}
+#displaybookingPageBody
+{
+    text-decoration: none;
+    color: blue;
+}
+.tableBookingCostPaddding
+{
+    margin-bottom: 30px;
+}
+#continueButtonCol
+{
+    text-align: right;
+    
+}
+#continueButton
+{
+    width: 80%;
+    font-size: 24px;
+    border-radius: 50px;
+    border-width: 0px;
+    border-bottom-width:  10px  ;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    background-color: rgb(38, 92, 74);
+}
+#cancleButton
+{
+    width: 40%;
+    font-size: 24px;
+    border-radius: 50px;
+    border-width: 0px;
+    border-bottom-width:  10px  ;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    background-color: red;
+}
+#confirmBooking,#greeting
+{
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    opacity: 0.9;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px black,-3px -3px 5px black;
+    background-color: black;
+    color: white;
+}
+#confirmBookingHeading
+{
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 2.5vw;
+}
+#advanPaymentFieldSet
+{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 50px;
+}
+#confirmBookingButton
+{
+    width: 30%;
+    font-size: 24px;
+    border-radius: 50px;
+    position: absolute;
+    left: 36%;
+    top: 55%;
+    border-width: 0px;
+    border-bottom-width:  10px  ;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    background-color: green;
+}
+#balance
+{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    font-size: 30px;
+}
+
+#balanceAmountInstruction
+{
+    font-size: 24px;
+    position: absolute;
+    left: 5%;
+    top: 68%;
+    color: rgb(111, 137, 58);
+}
+#wish
+{
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    color: palevioletred;
+    text-shadow: 1px 1px 2px black;
+}
+#BalanceBookingAmount
+{
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: pink;
+    text-decoration: underline dotted white  1mm ;
+    text-shadow: 2px 2px 3px black;
+    position: relative;
+    padding: 20px;
+}
+#displayDetails
+{
+    font-size: 24px;
+    width: 35%;
+    background-color: navy;
+    position: absolute;
+    left: 31%;
+    top: 53%;
+    border-width: 0px;
+    border-bottom-width:  10px  ;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+}
+#gridDetailsContainer
+{
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+    grid-template-columns: 50% 5% 28%;
+    width: 50%;
+    height: 700px;
+    font-size: 200%;
+    margin: 70px;
+    padding: 10px 30px 50px 30px;
+    background-color: white;
+    grid-row-gap: 2%;
+    border-radius: 50px;
+    color: black;
+    position: absolute;
+}
+#item1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: navy;
+    text-decoration: underline  dotted pink;
+    text-shadow: 1px 1px 3px black;
+}
+#heading
+{
+    position: relative;
+    color: purple;
+    font-size: 100%;
+    text-shadow: 1px 1px 3px black;
+}
+#itemBack
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 40%;
+    margin: 20px;
+    background-color: red;
+    position: absolute;
+    left: 25%;
+    border-width: 0px;
+    border-bottom: 10px solid black;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.button:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#bodyg
+{
+    height: 880px;
+}

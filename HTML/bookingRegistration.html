@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥S♥ HOTEL'S ->Booking</title>
+    <link rel="icon" href="../Assets/Logo/favicon.ico">
+    <link rel="stylesheet" href="../CSS/bookingPage.css">
+    <link rel="stylesheet" href="../CSS/Gallery.css">
+    <script src="../JS/images.js" defer></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../JS/bookingPage.js" defer></script>
+</head>
+<body onload="getDate(),image()">
+    <div id="header">
+        <h1 id="headerHeading"><span id="symbol">♥</span> WELCOME TO <span id="s">S</span> HOTELS <span id="symbol">♥</span></h1>
+        <div id="headicon">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" id="logo"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="logoi"></i></a>
+            <a href="https://www.snapchat.com"><i class="fa-brands fa-snapchat" id="logos"></i></a>
+       </div>
+    </div>
+    <nav id="navBar">
+        <un id="list">
+            <li id="navList"><a href="../index.html" id="list">HOME</a></li>
+            <li id="navList"><a href="./bookingRegistration.html" id="list">BOOKING</a></li>
+            <li id="navList"><a href="./Prices.html" id="list">PRICES</a></li>
+            <li id="navList"><a href="./Gallery.html" id="list">GALLERY</a></li>
+            <li id="navList"><a href="./About.html" id="list">ABOUT</a></li>
+        </un>
+    </nav>
+    <div id="body">
+    <form id="bookingPageBody" action="./bookingCost.html">
+        <h1 style="text-align: center;" id="itemHeadingBooking">BOOKING REGISTRATION</h1>
+                <fieldset class="gridItem" id="itemCustomerName" >
+                    <legend id="legend">Customer Name</legend>
+                    <input type="text" id="customerName" class="inputFieldSet" required>
+                </fieldset>
+                <fieldset class="gridItem" id="itemCheckinDate">
+                    <legend id="legend">Checkin Date</legend>
+                    <input type="date" id="checkinDate" class="inputFieldSet"  required >
+                </fieldset>
+                <fieldset class="gridItem" id="itemNoOfDays">
+                    <legend id="legend">Number of Days</legend>
+                    <input type="number" id="noOfDays"  class="inputFieldSet" required min="1">
+                </fieldset>
+                <fieldset class="gridItem" id="itemNoOfPersons">
+                    <legend id="legend">Number of Persons</legend>
+                    <input type="number" id="noOfPersons" class="inputFieldSet" required min="1">
+                </fieldset>
+                <fieldset class="gridItem" id="itemRoomType">
+                    <legend id="legend">Select Room Type</legend>
+                    <select id="roomType" class="inputFieldSet" required >
+                        <option value="" style="color: black;">--Select Room Type--</option>
+                        <option value="2500" style="color: black;">Delux Room</option>
+                        <option value="4000" style="color: black;">Suite Room</option>
+                    </select>
+                </fieldset>
+                <fieldset class="gridItem" id="itemAmenitiesCost">
+                    <legend  id="legend">Select Amenities</legend>
+                    <label id="amenities" >
+                        <input type="checkbox" value="1000" id="amenitiesAc" onclick="getValueAmenitiesAc()" >
+                        <label id="amenites">AC</label>
+                        <input type="checkbox" value="300" id="amenitiesLocker" onclick="getValueAmenitiesLocker()">
+                        <label id="amenites">Locker</label>
+                    </label>
+                </fieldset>
+                <input type="submit" class="button" value="REGISTER"  onclick="getValues()" id="itemRegisterButton">
+                <p id="itemNote"><strong>Note :</strong> 2 persons allowed for each Room, for extra persons Rs. 1000 per person per Day</p>
+    </form>
+</div>
+<footer id="footer">
+    <div>
+        <i class="fa-solid fa-copyright"></i><span> Copy Rights</span>
+         <h3 id="footerH">S Hotels</h3>
+    </div>
+    <div >
+        <span id="contact">Contact</span><br>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" id="logof"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" id="logof"></i></a>
+        <a href="https://www.snapchat.com"><i class="fa-brands fa-snapchat" id="logof"></i></a>
+    </div>
+</footer>
+</body>
+</html>
