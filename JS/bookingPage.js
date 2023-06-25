@@ -101,7 +101,11 @@ function bookingCost()
     var TotalCost= localStorage.getItem("TotalCost");
     document.getElementById("totalCost").innerHTML=TotalCost;
 }
-
+function advance()
+{
+    var cost=localstorage.getItem("TotalCost");
+   document.getElementById("advanceAmount").setAttribute("max",cost);
+}
 function confirmBooking()
 {
     var AdvanceAmount=document.getElementById("advanceAmount").value;
