@@ -1,6 +1,6 @@
 var amenitiesAc=0;
 var amenitiesLocker=0;
-function getDate(){
+function getDates(){
     var date=new Date();
     var dd=date.getDate();
     var mo=1+date.getMonth();
@@ -9,7 +9,7 @@ function getDate(){
     {
         dd="0"+dd;
     }
-    else if (mo<=9)
+    if (mo<=9)
     {
         mo="0"+mo;
     }
